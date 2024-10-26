@@ -9,6 +9,7 @@ public class movement : MonoBehaviour
     private Rigidbody2D rb;
     public Animator anim;
     public SpriteRenderer sR;
+    [SerializeField] private int damage;
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -21,6 +22,7 @@ public class movement : MonoBehaviour
 
     void Update()
     {
+        AttackPlayer();
         PlayerInput();
     }
     private void FixedUpdate()
@@ -60,5 +62,22 @@ public class movement : MonoBehaviour
             sR.flipX = true;
         else
             sR.flipX = false;
+    }
+    void AttackPlayer()
+    {
+        if (Input.GetKey(KeyCode.Mouse0))
+        {
+            anim.SetTrigger("isAttack");
+            anim.SetInteger("CountAttack", 1);
+
+            if (Input.GetKey(KeyCode.Mouse0))
+            {
+                anim.SetInteger("CountAttack", 2);
+            }
+            if (Input.GetKey(KeyCode.Mouse0))
+            {
+                anim.SetInteger("CountAttack", 3);
+            }
+        }
     }
 }

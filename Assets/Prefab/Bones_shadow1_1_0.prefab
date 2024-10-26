@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 469882524507139402}
   - component: {fileID: 2389505646919093241}
+  - component: {fileID: 893538543025522284}
   m_Layer: 0
   m_Name: Bones_shadow1_1_0
   m_TagString: Untagged
@@ -24,13 +25,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7073917669446591478}
-  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.5, y: 30.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2389505646919093241
 SpriteRenderer:
@@ -72,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 2111219586, guid: d63f3750ebc72b74a9fdd1856e180dc8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -84,3 +85,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &893538543025522284
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7073917669446591478}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.8125, y: 0.6875}
+    newSize: {x: 3.25, y: 2.75}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.18738604, y: 0.358387}
+      - {x: 0.06096697, y: 0.35261154}
+      - {x: 0.08017731, y: 0.23267746}
+      - {x: 0.023667336, y: 0.20262718}
+      - {x: 0.024278164, y: 0.10507202}
+      - {x: -0.114963055, y: 0.10946274}
+      - {x: -0.11487007, y: 0.22171402}
+      - {x: -0.20799398, y: 0.22417068}
+      - {x: -0.26740837, y: 0.09026718}
+      - {x: -0.39218187, y: -0.061906815}
+      - {x: -0.38310957, y: -0.18639565}
+      - {x: -0.34948587, y: -0.25489998}
+      - {x: -0.27973747, y: -0.29045296}
+      - {x: -0.13040733, y: -0.2904358}
+      - {x: 0.07995129, y: -0.27433014}
+      - {x: 0.15726233, y: -0.27221107}
+      - {x: 0.19644499, y: -0.23492622}
+      - {x: 0.19241619, y: -0.16366005}
+      - {x: 0.12616062, y: -0.13887787}
+      - {x: 0.17374039, y: 0.00004005432}
+      - {x: 0.38407612, y: 0.0606575}
+      - {x: 0.38619518, y: 0.23073769}
+      - {x: 0.19913387, y: 0.22805023}
