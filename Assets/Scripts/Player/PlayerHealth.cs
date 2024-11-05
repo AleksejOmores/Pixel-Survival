@@ -23,13 +23,16 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage(float damage)
     {
         health.fillAmount -= damage;
-        knockback.GetKnockedBack(EnemyMove.Instance.transform, 10f);
+        knockback.GetKnockedBack(EnemyMoveSoul.Instance.transform, 10f);
         StartCoroutine(flash.FlashPlayerRoutine());
 
         enemySpawner?.NotifyHealthObserver((float)Math.Round(health.fillAmount * 100));
     }
 
-
+    public void SetCurrentHealth(float healthSize)
+    {
+        health.fillAmount = healthSize;
+    }
     public void Die()
     {
         if (health.fillAmount <= 0)

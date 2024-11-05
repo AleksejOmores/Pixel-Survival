@@ -36,12 +36,12 @@ public class EnemyMove : MonoBehaviour
         TurnEnemyMove();
 
         float distancePlayer = Vector2.Distance(this.transform.position, playerPosition.position);
-        if (distancePlayer <= 6f && !hasNotified)
+        if (distancePlayer <= 6.1f && !hasNotified)
         {
             enemySpawner?.NotifyObserver("Враг приближается к игроку");
             hasNotified = true;
         }
-        else if (distancePlayer > 5f)
+        else if (distancePlayer > 6f)
         {
             hasNotified = false;
         }
